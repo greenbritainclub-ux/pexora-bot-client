@@ -1,0 +1,89 @@
+﻿{
+    "Passed": true,
+    "CreatedUtc": "2026-09-17T19:32:48.8250530Z",
+    "BaseBuildSHA256": "D73B4808BF45FF9886CA0BB7239E5C5936E37B39A4A26683B3C1230EE607DD9D",
+    "EndpointSHA256": "B6FAA9A7A601FC922DBFD86CD996E37E6FAE6A90A3C44128F48AAF9ABB259B2F",
+    "HarnessSHA256": "CE453CBB4BFD55B76B2525FE42D08649B8E107E3764F9E2DEE120A42DC959396",
+    "DeploymentSHA256": "B0A2F81079D284457FADB5E80B989A237C0F59F7C3022BAA24FEFE362AAE7655",
+    "AllureSHA256": "3934b70f55ef60e62f565d52c367d9a009115b6acd1593d8e07df87f968df17f",
+    "Files": [
+        {
+            "SHA256": "0727DFC11DA66825A2C894BDD95FE165E2E81BA2AFA2E2F1CE077993F428E575",
+            "Name": "Attach-LocalBatchLoadV70.ps1"
+        },
+        {
+            "SHA256": "EC7FE9CB7BAA311A4FE847069BAF684DF128F95C39D64438807CBC06F498241C",
+            "Name": "Run-LocalBatchConsoleV70.ps1"
+        },
+        {
+            "SHA256": "32FFF6D2E9FEEBF82486CBB752C33B0ED694351074831135AF8C38B0929B62DE",
+            "Name": "Start-LocalBatchConsoleV70.ps1"
+        },
+        {
+            "SHA256": "56B8C270853A04D108180131B2B66C12583567AEAA5E1AC29086604932705E86",
+            "Name": "Validate-LocalBatchVmV70.ps1"
+        },
+        {
+            "SHA256": "4AA6DAEB9E1D56BEFA15E87E868DB0B9B28C5908912870147522A620C54A2479",
+            "Name": "Run-ConnectedFixturesV4.ps1"
+        },
+        {
+            "SHA256": "141C40310F5C922933B6AF0BB0BE90D3F520A880CF5D7ED784502FF9CEF52DC4",
+            "Name": "Watch-LocalBatchConsoleV4.ps1"
+        },
+        {
+            "SHA256": "FA6B895FE8C1BACAD7683010FCAACB3421673598D1D3C353B181FCB8B6C355F1",
+            "Name": "LocalBatchSessionGateV4.ps1"
+        },
+        {
+            "SHA256": "5BF1794AA821BB9DB5F057F1E1057E63A4FF539527EE704C661C432720AE4DE7",
+            "Name": "Test-LocalBatchSessionGateV4.ps1"
+        },
+        {
+            "SHA256": "2B7EE3F296A4488A9D2E7058E54995F22A9CDB9C79296C358FA85ADCB04C3007",
+            "Name": "Activate-OsrsForLocalV4.ps1"
+        },
+        {
+            "SHA256": "684D9211E0FDA352DEA3FAA82C86D7C64D09532862C3B43A419D650822E01D71",
+            "Name": "Bounded-LocalReportV7.ps1"
+        },
+        {
+            "SHA256": "C7DF985AA08DD05DF689E980CF4C145BE472B5AA9E5EF0382896827B624F0557",
+            "Name": "ClientUiLaunchGateV9.ps1"
+        },
+        {
+            "SHA256": "CF3C768FB2551C8E092B1D3C04507C28C981729F73D34878AEC5E287E3C258C8",
+            "Name": "Test-ClientUiLaunchGateV9.ps1"
+        },
+        {
+            "SHA256": "6FC21C28D19DDCB9B76C6DC36394A0BD1B2F52751F7E3C81D3756CC832BC611A",
+            "Name": "Test-DisplayPreflightV9.ps1"
+        },
+        {
+            "SHA256": "10074B29C037BC4DF961ADF08456C428D648D241A0CE656D3399DD88A0B7A946",
+            "Name": "Attach-OverlaySessionV6.ps1"
+        },
+        {
+            "SHA256": "E37D086B35E607E006E476E8B25DFF2230308E7D38F0D8320D8B2081CB39E477",
+            "Name": "WatchdogReadyGateV34.ps1"
+        },
+        {
+            "SHA256": "927A8C4ABE952F2AE69CB7B50100DC9A8A07A91F4906D13ED57874E82277241D",
+            "Name": "StartupPhaseGateV35.ps1"
+        },
+        {
+            "SHA256": "B7017679216DF64752104CF3C7014225FAB69A17A82802919367E77D64E602B2",
+            "Name": "Attach-LocalPluginListV39.ps1"
+        },
+        {
+            "SHA256": "A1843D81333EB07AD89C662A8522EEB73F3B967F8B4CD59F8DDFD3EE01FD8355",
+            "Name": "LocalProcessInfoV155.ps1"
+        }
+    ],
+    "NoPluginStartRequested": true,
+    "OverlayFixed": false,
+    "GameRestarted": false,
+    "QuoteFallbackApproved": true,
+    "PartialBasketTradeoffAccepted": true,
+    "ChangeScope": "V155 batch helper repinned for fallback registration; Mike and the four-plugin attach now dispatch concurrently while remaining stopped by default."
+}

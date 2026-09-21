@@ -1,0 +1,10 @@
+{
+  "schema": "pexora-portable-dt1-v1",
+  "sourceRoute": "GPU-Clipboard-Pexora-FirstIsolated-Batch.wsb + RuntimeSession-v113",
+  "guest": { "memoryMB": 8192, "vGPU": "Disable", "networking": "Enable", "pluginStartRequested": false },
+  "basePlugins": ["mikes-fishing", "allure-account-builder", "detuks-inferno", "detuks-fight-caves", "detuks-colosseum"],
+  "extension": { "slug": "detuks-delve", "candidate": "v44", "helper": "v55", "defaultEnabled": false },
+  "excludedState": ["credentials", "cookies", "sessions", "TOTP", "browser profiles", "DPAPI vaults", "logs", "dumps", "raw captures", "historical archives", "unrelated DreamBot analysis"],
+  "lastHistoricalReadiness": "connected-v4-20260915-031716-912",
+  "freshTransferVerificationRequired": true
+}

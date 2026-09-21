@@ -1,0 +1,191 @@
+﻿{
+    "Schema":  "pexora-dt1-launcher-io-v100",
+    "BuiltUtc":  "2026-09-14T16:06:14.1277405Z",
+    "OriginalPreserved":  true,
+    "OriginalFiles":  [
+                          {
+                              "SHA256":  "3CC4E6ECAE8E464D2B80BCBFC5E819813091A69361B714BC463B8B258C5D385C",
+                              "Name":  "Activate-OsrsForLocalV4.ps1"
+                          },
+                          {
+                              "SHA256":  "50D75CC1EAA924CA4144EF4F6F46A07481F8B443CB3D0A832AD1BF2EF586161B",
+                              "Name":  "Assert-AllureBehaviorKitV6.ps1"
+                          },
+                          {
+                              "SHA256":  "445A3C461F5A3DFC0D76EFCA4862C9A8EB772AF0226EC255E1442468700A15E2",
+                              "Name":  "Attach-LocalBatchLoadV70.ps1"
+                          },
+                          {
+                              "SHA256":  "59602A2D27E3C958AAAAB8E8C5FB100083FAAC9E12D692B9C62075B8188FAAA3",
+                              "Name":  "Attach-LocalPluginListV39.ps1"
+                          },
+                          {
+                              "SHA256":  "10074B29C037BC4DF961ADF08456C428D648D241A0CE656D3399DD88A0B7A946",
+                              "Name":  "Attach-OverlaySessionV6.ps1"
+                          },
+                          {
+                              "SHA256":  "684D9211E0FDA352DEA3FAA82C86D7C64D09532862C3B43A419D650822E01D71",
+                              "Name":  "Bounded-LocalReportV7.ps1"
+                          },
+                          {
+                              "SHA256":  "C7DF985AA08DD05DF689E980CF4C145BE472B5AA9E5EF0382896827B624F0557",
+                              "Name":  "ClientUiLaunchGateV9.ps1"
+                          },
+                          {
+                              "SHA256":  "930EED1B65FCD82D7C987FD9A99898C6AA311B71DC19AD629C13521EC0240024",
+                              "Name":  "LocalBatchSessionGateV4.ps1"
+                          },
+                          {
+                              "SHA256":  "EEFC8F322FDF3C8CF10291AE41827BA66F10FAC9E4092DCC7B71F282D0072BB0",
+                              "Name":  "manifest.json"
+                          },
+                          {
+                              "SHA256":  "E254529D19A3B07CCD118602EF8AE2A565652845AE26EB5C189E60E67F068ACB",
+                              "Name":  "preflight.json"
+                          },
+                          {
+                              "SHA256":  "CCD09E0BAAC73688FB5F609E3F6F689871A8CEE336ADC37FD07FC14672D5DB11",
+                              "Name":  "Run-ConnectedFixturesV4.ps1"
+                          },
+                          {
+                              "SHA256":  "1F3F4B9C7E8EB509E72F2F44181F5CF078B0DF9E58C45680980744C8ED4CB121",
+                              "Name":  "Run-LocalBatchConsoleV70.ps1"
+                          },
+                          {
+                              "SHA256":  "33CE7220952E361974035963D9D91D41D943F917A19AC1E91EF909F3B8706DD5",
+                              "Name":  "Run-LocalBatchWithRetryV1.ps1"
+                          },
+                          {
+                              "SHA256":  "98E92A8D21383E5296D0C1F9114F9746FCCC405BD060AD8DB168398BA5B8F2F7",
+                              "Name":  "Start-Dt1ResumeV70.ps1"
+                          },
+                          {
+                              "SHA256":  "59D07D47C821F4D8264F39FA9250EE1E540DA16AB34788DAD75755C31D5EA399",
+                              "Name":  "Start-LocalBatchConsoleV70.ps1"
+                          },
+                          {
+                              "SHA256":  "927A8C4ABE952F2AE69CB7B50100DC9A8A07A91F4906D13ED57874E82277241D",
+                              "Name":  "StartupPhaseGateV35.ps1"
+                          },
+                          {
+                              "SHA256":  "CF3C768FB2551C8E092B1D3C04507C28C981729F73D34878AEC5E287E3C258C8",
+                              "Name":  "Test-ClientUiLaunchGateV9.ps1"
+                          },
+                          {
+                              "SHA256":  "6FC21C28D19DDCB9B76C6DC36394A0BD1B2F52751F7E3C81D3756CC832BC611A",
+                              "Name":  "Test-DisplayPreflightV9.ps1"
+                          },
+                          {
+                              "SHA256":  "5BF1794AA821BB9DB5F057F1E1057E63A4FF539527EE704C661C432720AE4DE7",
+                              "Name":  "Test-LocalBatchSessionGateV4.ps1"
+                          },
+                          {
+                              "SHA256":  "FC5ECFF221F0C649750D8E6339FBEE9829869A0F4D1BCDC047CB0B49F9EB30A9",
+                              "Name":  "Validate-LocalBatchVmV70.ps1"
+                          },
+                          {
+                              "SHA256":  "369D12A21CC0C3FB7694B22D85F95CD2F75310E7C2D434B1B01CDD426B1AB296",
+                              "Name":  "Watch-LocalBatchConsoleV4.ps1"
+                          },
+                          {
+                              "SHA256":  "E37D086B35E607E006E476E8B25DFF2230308E7D38F0D8320D8B2081CB39E477",
+                              "Name":  "WatchdogReadyGateV34.ps1"
+                          }
+                      ],
+    "Artifacts":  [
+                      {
+                          "SHA256":  "3CC4E6ECAE8E464D2B80BCBFC5E819813091A69361B714BC463B8B258C5D385C",
+                          "Name":  "Activate-OsrsForLocalV4.ps1"
+                      },
+                      {
+                          "SHA256":  "A1488B34E686523C43A92C8DF7C2EE493EF23D4D03E67DAC7978117667BD2E3A",
+                          "Name":  "Assert-AllureBehaviorKitV6.ps1"
+                      },
+                      {
+                          "SHA256":  "1A6011252B3889563777F79CF28B4840B8E23764ABC768D912809212C1D61A8B",
+                          "Name":  "Attach-LocalBatchLoadV70.ps1"
+                      },
+                      {
+                          "SHA256":  "59602A2D27E3C958AAAAB8E8C5FB100083FAAC9E12D692B9C62075B8188FAAA3",
+                          "Name":  "Attach-LocalPluginListV39.ps1"
+                      },
+                      {
+                          "SHA256":  "10074B29C037BC4DF961ADF08456C428D648D241A0CE656D3399DD88A0B7A946",
+                          "Name":  "Attach-OverlaySessionV6.ps1"
+                      },
+                      {
+                          "SHA256":  "684D9211E0FDA352DEA3FAA82C86D7C64D09532862C3B43A419D650822E01D71",
+                          "Name":  "Bounded-LocalReportV7.ps1"
+                      },
+                      {
+                          "SHA256":  "C7DF985AA08DD05DF689E980CF4C145BE472B5AA9E5EF0382896827B624F0557",
+                          "Name":  "ClientUiLaunchGateV9.ps1"
+                      },
+                      {
+                          "SHA256":  "930EED1B65FCD82D7C987FD9A99898C6AA311B71DC19AD629C13521EC0240024",
+                          "Name":  "LocalBatchSessionGateV4.ps1"
+                      },
+                      {
+                          "SHA256":  "6C587E1FBD21B8D1B636C41F9F17D37E938BB860643AD65EAD563EC2EB5AB062",
+                          "Name":  "manifest.json"
+                      },
+                      {
+                          "SHA256":  "E254529D19A3B07CCD118602EF8AE2A565652845AE26EB5C189E60E67F068ACB",
+                          "Name":  "preflight.json"
+                      },
+                      {
+                          "SHA256":  "CCD09E0BAAC73688FB5F609E3F6F689871A8CEE336ADC37FD07FC14672D5DB11",
+                          "Name":  "Run-ConnectedFixturesV4.ps1"
+                      },
+                      {
+                          "SHA256":  "6F0615D4F8F337B5424E122EC5D4E68367A3D031E17C197F889F3C5D36C2F2C4",
+                          "Name":  "Run-LocalBatchConsoleV70.ps1"
+                      },
+                      {
+                          "SHA256":  "F823571E29B85861BEC3FF3886E639634324BA7D7C8528D1CCB88F9AF1695384",
+                          "Name":  "Run-LocalBatchWithRetryV1.ps1"
+                      },
+                      {
+                          "SHA256":  "21662ADE4CC9C6187AE460A816EB71073B9CDDC415DF524875BA05B9FCBDBA3F",
+                          "Name":  "SharedStateIO.ps1"
+                      },
+                      {
+                          "SHA256":  "DEDFBBE344B39F6626A7E97A84EAABE32B99966E385570D6162690E63A225A11",
+                          "Name":  "Start-Dt1ResumeV70.ps1"
+                      },
+                      {
+                          "SHA256":  "4D6F592A7B9E9A1D4A3EC07A1699A89F2A8906F9B3115A362344C1FA3865D357",
+                          "Name":  "Start-LocalBatchConsoleV70.ps1"
+                      },
+                      {
+                          "SHA256":  "927A8C4ABE952F2AE69CB7B50100DC9A8A07A91F4906D13ED57874E82277241D",
+                          "Name":  "StartupPhaseGateV35.ps1"
+                      },
+                      {
+                          "SHA256":  "CF3C768FB2551C8E092B1D3C04507C28C981729F73D34878AEC5E287E3C258C8",
+                          "Name":  "Test-ClientUiLaunchGateV9.ps1"
+                      },
+                      {
+                          "SHA256":  "6FC21C28D19DDCB9B76C6DC36394A0BD1B2F52751F7E3C81D3756CC832BC611A",
+                          "Name":  "Test-DisplayPreflightV9.ps1"
+                      },
+                      {
+                          "SHA256":  "5BF1794AA821BB9DB5F057F1E1057E63A4FF539527EE704C661C432720AE4DE7",
+                          "Name":  "Test-LocalBatchSessionGateV4.ps1"
+                      },
+                      {
+                          "SHA256":  "2C085A301DBDA9C196AE76EB2F5EAC255D2C6596B50AC29CC821219A3F33F90D",
+                          "Name":  "Validate-LocalBatchVmV70.ps1"
+                      },
+                      {
+                          "SHA256":  "369D12A21CC0C3FB7694B22D85F95CD2F75310E7C2D434B1B01CDD426B1AB296",
+                          "Name":  "Watch-LocalBatchConsoleV4.ps1"
+                      },
+                      {
+                          "SHA256":  "E37D086B35E607E006E476E8B25DFF2230308E7D38F0D8320D8B2081CB39E477",
+                          "Name":  "WatchdogReadyGateV34.ps1"
+                      }
+                  ],
+    "RuntimeAndPluginsChanged":  false,
+    "LivePassed":  false
+}

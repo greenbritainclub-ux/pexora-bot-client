@@ -1,0 +1,94 @@
+{
+  "Version": 2,
+  "Variant": "DT1 original runtime with bounded Mike-manager readiness",
+  "OriginalKitSHA256": "C61205321E0DF60C3C32E64C3C62CFDE1BDA38CC1A3CD64B78DA16AA202361A4",
+  "PluginArchivesChanged": false,
+  "PluginStartRequested": false,
+  "Files": [
+    {
+      "RelativePath": "core.dll",
+      "Length": 63036128,
+      "SHA256": "1DB85EAED5A2761453C81310EE0259F425BDA33EA05108744951E24D08EDBC39"
+    },
+    {
+      "RelativePath": "dxil.dll",
+      "Length": 3831600,
+      "SHA256": "FEB57253EFF0A622561E29B44CEDBE86B89FC9A5BC8DC00FA2F98FAFD712C2D8"
+    },
+    {
+      "RelativePath": "FixtureModule.dll",
+      "Length": 102912,
+      "SHA256": "10ED59DC798A670D18571497D0C6EBFB5722072EF236142C6DC3E3318286AF3A"
+    },
+    {
+      "RelativePath": "GameLoadTest.exe",
+      "Length": 287744,
+      "SHA256": "B20BD46A0D6F9FDE6CBA9C33647B569CD3DCB305C71E2F84102792CFD3B5FE0A"
+    },
+    {
+      "RelativePath": "libgallium_wgl.dll",
+      "Length": 61734400,
+      "SHA256": "1A2E49CD5FDB1A857D98117AB04240D723B57DA5DFFE6D07F5386F42014557C1"
+    },
+    {
+      "RelativePath": "LocalBootstrap.dll",
+      "Length": 164864,
+      "SHA256": "8484B2475C031D7CB409D68A4227704207991E7C27F91BC97DA1DC915F335AFD"
+    },
+    {
+      "RelativePath": "LocalBootstrapFixture.exe",
+      "Length": 148992,
+      "SHA256": "D76A862278C6D36CCFBA102976F2D1075997CDDB68D46AE681F3FDACFAE7BB1E"
+    },
+    {
+      "RelativePath": "LocalPluginAttach.dll",
+      "Length": 283648,
+      "SHA256": "E2E7191129B16073ED23C5E4B1D053C716F67DD105E568B28A3E55DD62468280"
+    },
+    {
+      "RelativePath": "LocalPluginFixture.exe",
+      "Length": 215040,
+      "SHA256": "D49F4541ADE94348C6A1AFBD2FAB953E66E01781DF4CBCD2A91CE41F5C6447B1"
+    },
+    {
+      "RelativePath": "LocalPluginProbe.jar",
+      "Length": 6614,
+      "SHA256": "7DB1D8A6F482198E99E206B5B8D73754D94F30C24533C13239DC32768230E07F"
+    },
+    {
+      "RelativePath": "opengl32.dll",
+      "Length": 139264,
+      "SHA256": "33B217ED7947B48684BAA987914475898A2B4D7D64CCE96B078216C67A633582"
+    },
+    {
+      "RelativePath": "osclient.exe",
+      "Length": 15811368,
+      "SHA256": "415FBEB46F51BEEC311A1609EB79B4C15EF7CA4E29AF0038FAF1628B4F080775"
+    },
+    {
+      "RelativePath": "profile\\.detuksosrs\\plugin-hub\\mikes-fishing_6dd9a405a4fd6c6610c63a8d8e3a63f13d64a5ec7de4ecd0bd23dcf44bedb5ae.jar",
+      "Length": 641174,
+      "SHA256": "6DD9A405A4FD6C6610C63A8D8E3A63F13D64A5EC7DE4ECD0BD23DCF44BEDB5AE"
+    },
+    {
+      "RelativePath": "profile\\AppData\\Local\\.dc\\l\\755ec1ffc10626a359b105dd1da04fa7",
+      "Length": 66654864,
+      "SHA256": "864C5FFD2280C44ADA197E0E61B7D2144ABC13B9AD8A078E314C9995497DAFB4"
+    },
+    {
+      "RelativePath": "profile\\AppData\\Local\\.dc\\l\\a2546427a095452fb549f189e23327c6",
+      "Length": 52248672,
+      "SHA256": "8164CED832F42D4FC75644109874C3C9DE77A6BD61687054B2E05CFFAE92E18B"
+    },
+    {
+      "RelativePath": "profile\\AppData\\Local\\.dc\\l\\f45222f46d10d1f05c056a64c9e50671",
+      "Length": 63036160,
+      "SHA256": "D90F0BB6E1994870A22E4AE6329C01840A7CC56990D543E69F5FDD388CD82389"
+    },
+    {
+      "RelativePath": "software-bootstrap-v1.bin",
+      "Length": 132,
+      "SHA256": "4B670680867152AD7451E643BF453AFC13ACADB2580D0F8CC49E681BD3109580"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+$ErrorActionPreference='Stop'
+Set-StrictMode -Version Latest
+if($env:USERNAME -ne 'WDAGUtilityAccount'){throw 'Guest only'}
+function Assert-AllureBehaviorKitV6 {
+ $taskWork=(Split-Path -Parent $PSScriptRoot);$taskCurrentWork=$PSScriptRoot;$taskCase='C:\CanaryLogs\plugin-batch-20260906-v1'
+ $taskPins=@{
+  'allure-dt1-launch-v70-net-v155\manifest.json'='9D70D4177F578CC38AAAF9E2B321067B39785039BFDE774BEE498BFEA07165A4'
+  'allure-local-launch-v70\build-result.json'='5FCF44E9FC5033BB760350615C8B3A19B17ECC8840EAEBF3A258CD8027C45239'
+  'local-batch-deployment-v70.json'='B0A2F81079D284457FADB5E80B989A237C0F59F7C3022BAA24FEFE362AAE7655'
+  'launch-v155\osrs-endpoint-manifest-v4.json'='B6FAA9A7A601FC922DBFD86CD996E37E6FAE6A90A3C44128F48AAF9ABB259B2F'
+ }
+ foreach($name in $taskPins.Keys){if((Get-FileHash -LiteralPath (Join-Path $taskCase $name) -Algorithm SHA256).Hash -ne $taskPins[$name]){throw ('Manifest changed: '+$name)}}
+ $taskBase=Get-Content -LiteralPath (Join-Path $taskCase 'allure-local-launch-v70\build-result.json') -Raw|ConvertFrom-Json
+ $taskCurrent=Get-Content -LiteralPath (Join-Path $taskCase 'allure-dt1-launch-v70-net-v155\manifest.json') -Raw|ConvertFrom-Json
+ if(!$taskBase.Passed -or !$taskCurrent.Passed){throw 'Launch kit did not pass'}
+ $taskPatched=@{
+  'sources\LocalBatchLoadV70.java'='2A433AB039A91AA6D1E7FD80397D7743C0D45D01C8DCB18EFE1214A39F18ED6E'
+  'LocalBatchLoadV70.java'='2A433AB039A91AA6D1E7FD80397D7743C0D45D01C8DCB18EFE1214A39F18ED6E'
+  'LocalBatchLoadV70.jar'='16DBF23EEB0A8E4A3B9A4EA40F706A9A410B30DF2CE5FDBDFF8C54AB9D2B682F'
+ }
+ foreach($f in $taskBase.Files){$expected=if($taskPatched.ContainsKey([string]$f.Relative)){$taskPatched[[string]$f.Relative]}else{$f.SHA256};if((Get-FileHash -LiteralPath (Join-Path $taskWork $f.Relative) -Algorithm SHA256).Hash -ne $expected){throw ('V6 base artifact changed: '+$f.Relative)}}
+ foreach($f in $taskCurrent.Files){if((Get-FileHash -LiteralPath (Join-Path $taskCurrentWork $f.Name) -Algorithm SHA256).Hash -ne $f.SHA256){throw 'Current launch script changed'}}
+ if((Get-FileHash -LiteralPath 'C:\SandboxGuard\first-game-v1\GameLoadTestOverlayV2.exe' -Algorithm SHA256).Hash -ne $taskCurrent.HarnessSHA256){throw 'Overlay harness changed'}
+ $taskDeploy=Get-Content -LiteralPath (Join-Path $taskCase 'local-batch-deployment-v70.json') -Raw|ConvertFrom-Json
+ if($taskDeploy.Plugins.Count -ne 4){throw 'Plugin scope changed'}
+ foreach($p in $taskDeploy.Plugins){if((Get-FileHash -LiteralPath $p.Jar -Algorithm SHA256).Hash -ne $p.Hash){throw 'Staged plugin changed'}}
+ $taskNet=Get-Content -LiteralPath (Join-Path $taskCase 'launch-v155\osrs-network-verification-v4.json') -Raw|ConvertFrom-Json
+ $taskEndpoints=Get-Content -LiteralPath (Join-Path $taskCase 'launch-v155\osrs-endpoint-manifest-v4.json') -Raw|ConvertFrom-Json
+ # Local-runtime mode: the endpoint snapshot is historical but structurally
+ # verified; reuse it instead of blocking the offline plugin harness on a
+ # fresh world-list refresh. Firewall policy is still applied per launch.
+ if(!$taskNet.Passed -or !$taskNet.Restored -or !$taskNet.OtherRulesUnchanged -or $taskNet.EndpointManifestSHA256 -ne $taskCurrent.EndpointSHA256){throw 'Verified network approval required'}
+ $taskRuntime='C:\CanaryLogs\first-launch-20260906-v1\local-test-kit-v1\manifest.json'
+ if((Get-FileHash -LiteralPath $taskRuntime -Algorithm SHA256).Hash -ne 'DDB0B7B1136EE4F1E6DE57305FD9F3E1A312C6F87DFD02972BCB2AC5FD1A5DA4'){throw 'Runtime manifest changed'}
+ foreach($f in (Get-Content -LiteralPath $taskRuntime -Raw|ConvertFrom-Json).Files){if((Get-FileHash -LiteralPath (Join-Path 'C:\SandboxGuard\first-game-v1' $f.RelativePath) -Algorithm SHA256).Hash -ne $f.SHA256){throw ('Runtime changed: '+$f.RelativePath+' guest='+(Get-FileHash -LiteralPath (Join-Path 'C:\SandboxGuard\first-game-v1' $f.RelativePath) -Algorithm SHA256).Hash+' pinned='+$f.SHA256)}}
+}

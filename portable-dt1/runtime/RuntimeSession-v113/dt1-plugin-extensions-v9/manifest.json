@@ -1,0 +1,56 @@
+﻿{
+    "schema": "pexora-dt1-plugin-extensions-v9",
+    "track": "first-isolated-v113-dt1-v70",
+    "baseManifest": "local-batch-load-v70\\pexora-local-runtime-manifest.json",
+    "baseManifestSHA256": "bf5b7aace49b43ee41b6958b66c269ea51bbb1838e2fa12e600060ed83dff5c9",
+    "plugins": [
+        {
+            "slug": "detuks-delve",
+            "entry": "com.a.g.a.b.a.DelvePlugin",
+            "candidate": "v44",
+            "helper": "v55",
+            "dispatcher": "dt1-plugin-extensions-v9\\Invoke-DelveTestV55.ps1",
+            "defaultEnabled": false,
+            "pluginStartRequested": false,
+            "fixturesPassed": true,
+            "apiLinked": true,
+            "lifecycleMapping": "DT1_START_VQ_STOP_VN",
+            "noStartPassed": false,
+            "settingsInteractionVerified": false,
+            "startVerified": false,
+            "overlayVerified": false,
+            "disableVerified": false,
+            "functionallyVerified": false
+        }
+    ],
+    "artifacts": [
+        {
+            "path": "delve-dt1-v1\\test-v55\\detuks-delve-v44.jar",
+            "sha256": "ba6cf9ef3fce3e1d1d3633d11973f648764319023e3367cad99d082582d011ba"
+        },
+        {
+            "path": "delve-dt1-v1\\test-v55\\DelveTestV55.jar",
+            "sha256": "1364d3a5488de31f86a86e29a46e012024f123ff4e21c9723b28cbbde30267c1"
+        },
+        {
+            "path": "delve-dt1-v1\\test-v55\\DelveTestV55.dll",
+            "sha256": "9567d0ca56e50463e91be07114fcf2cf0b8eb38c40737e4a9e779c541105ba05"
+        },
+        {
+            "path": "delve-dt1-v1\\test-v55\\DelveTestInjectorV55.exe",
+            "sha256": "db2d8338279b1cf481086221062667e52bb6b73f82310282c53f0cfa26ef4403"
+        },
+        {
+            "path": "delve-dt1-v1\\travel-v44\\candidate-v44\\travel-v44.json",
+            "sha256": "971a3ba1f6c15b440c4d94a8e8ed3f5a3e8a99fb1d3f7eb7a904de57e26ae22a"
+        },
+        {
+            "path": "dt1-plugin-extensions-v9\\Invoke-DelveTestV55.ps1",
+            "sha256": "b60f8a6e55885a47d27075e35033ba3787dd7a8f9d7bff7a884bd52e7ae85056"
+        },
+        {
+            "path": "dt1-plugin-extensions-v9\\Register-Dt1PluginExtensions.ps1",
+            "sha256": "c378c955c3b94f92d31f8505987af961ea90569c32634b7b01961efde83ae5ad"
+        }
+    ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema": "pexora-local-runtime-v1",
+  "track": "first-isolated-v113",
+  "clientVersion": "1.2.415-STABLE",
+  "mode": "local-offline-plugin-runtime",
+  "compatibilityPolicy": "plugin-registration-set-v1\\PexoraCompatibilityPolicy-v1.json",
+  "sharedRuntime": {
+    "rendererBridge": "v38-software-raster-upright",
+    "registrationGate": "disabled-by-default-no-start",
+    "loaderContract": "current-core-generic-v1",
+    "loaderSha256": "4CCD8DB8F885D682916BA65BFE32A755278638BB11CFE1BD206BFC0DB195F107"
+  },
+  "artifacts": [
+    {
+      "role": "osclient",
+      "path": "first-game-v1\\osclient.exe",
+      "sha256": "415FBEB46F51BEEC311A1609EB79B4C15EF7CA4E29AF0038FAF1628B4F080775"
+    },
+    {
+      "role": "core",
+      "path": "first-game-v1\\core.dll",
+      "sha256": "1DB85EAED5A2761453C81310EE0259F425BDA33EA05108744951E24D08EDBC39",
+      "fileSize": 63036128,
+      "imageSize": 63610880
+    },
+    {
+      "role": "bootstrap",
+      "path": "first-game-v1\\LocalBootstrap.dll",
+      "sha256": "8484B2475C031D7CB409D68A4227704207991E7C27F91BC97DA1DC915F335AFD"
+    },
+    {
+      "role": "harness",
+      "path": "first-game-v1\\GameLoadTestOverlayV2.exe",
+      "sha256": "CE453CBB4BFD55B76B2525FE42D08649B8E107E3764F9E2DEE120A42DC959396"
+    }
+  ],
+  "plugins": [
+    {
+      "slug": "allure-account-builder",
+      "entry": "com.a.f.a.AllureAccountBuilder",
+      "path": "first-game-v1\\profile\\.detuksosrs\\plugin-hub\\allure-account-builder_3934b70f55ef60e62f565d52c367d9a009115b6acd1593d8e07df87f968df17f.jar",
+      "sha256": "3934B70F55EF60E62F565D52C367D9A009115B6ACD1593D8E07DF87F968DF17F",
+      "defaultEnabled": false
+    },
+    {
+      "slug": "detuks-inferno",
+      "entry": "com.a.g.a.b.a.InfernoPlugin",
+      "path": "first-game-v1\\profile\\.detuksosrs\\plugin-hub\\detuks-inferno_990caba26e52a2cee8b9dd479124ea6d5ec1ee01d6ac0b9b6be7f0d90d1e44b0.jar",
+      "sha256": "990CABA26E52A2CEE8B9DD479124EA6D5EC1EE01D6AC0B9B6BE7F0D90D1E44B0",
+      "defaultEnabled": false
+    },
+    {
+      "slug": "detuks-fight-caves",
+      "entry": "com.a.g.a.b.a.FightCavePlugin",
+      "path": "first-game-v1\\profile\\.detuksosrs\\plugin-hub\\detuks-fight-caves_eb4a68b5a1b4cab8059cc8457a366f7c928ad5685c6e3e4a7ad6ee8e317ed2e3.jar",
+      "sha256": "EB4A68B5A1B4CAB8059CC8457A366F7C928AD5685C6E3E4A7AD6EE8E317ED2E3",
+      "defaultEnabled": false
+    },
+    {
+      "slug": "detuks-colosseum",
+      "entry": "com.a.g.a.b.a.ColosseumPlugin",
+      "path": "first-game-v1\\profile\\.detuksosrs\\plugin-hub\\detuks-colosseum_512065e7d34eef35a4398ccec4a91f926b3955e6a007273a6efeb03479e14acc.jar",
+      "sha256": "512065E7D34EEF35A4398CCEC4A91F926B3955E6A007273A6EFEB03479E14ACC",
+      "defaultEnabled": false
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schema": "pexora-inferno-debug-overlay-prestart-v71",
+  "createdDate": "2026-09-15",
+  "passed": true,
+  "scope": "next-launch-offline-staging",
+  "oldJarSha256": "C83B5CB655A6BCEBB6F84DEFFD7A7948E0CC6B6688B41BE0D2817A449F7D4625",
+  "activeJarSha256": "F6DDC2D5616B86ED88BD71278401990347D7E7BACF5F8CB0E7B2BAD17AB6CB4E",
+  "sourceSha256": "B70577D38247DDDE4851D54D92D976B0F42696507006BB0D8E3AF416A24EB985",
+  "route": "ALWAYS_ON_TOP",
+  "routeTiming": "plugin-registered-stopped-before-first-start",
+  "debugSetting": "detuksinferno.debug=true",
+  "pluginStartRequested": false,
+  "rendererChanged": false,
+  "currentSandboxRestarted": false,
+  "currentSandboxTouched": false,
+  "freshLaunchVerified": false,
+  "checks": {
+    "javaFixture": "PASS checks=10",
+    "powershellParse": "PASS files=5",
+    "legacyValidateOnly": true,
+    "jagexValidateOnly": true,
+    "v100LauncherPins": true,
+    "jagexCandidatePins": true
+  },
+  "rollbackArchive": "archive\\inferno-debug-overlay-prestart-v71\\prechange-20260915"
+}

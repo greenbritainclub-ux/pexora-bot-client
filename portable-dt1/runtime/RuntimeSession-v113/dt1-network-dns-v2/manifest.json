@@ -1,0 +1,13 @@
+{
+  "schema": "pexora-dt1-network-dns-repair-v2",
+  "createdUtc": "2026-09-14T09:00:00Z",
+  "scope": "Original full DT1 Sandbox only",
+  "entry": "Prepare-Dt1NetworkWithDnsRepairV2.ps1",
+  "sha256": "C35D98EA8048F911684D2F84B0D7C8C2822F805351D8808E9FC6F5EA10167E2C",
+  "purpose": "Use native guest netsh only when default OSRS DNS has no answer but a bounded direct public resolver answer exists. Then run the preserved v1 OSRS preflight.",
+  "doesNot": [
+    "use CIM or Set-DnsClientServerAddress",
+    "change host networking or host security",
+    "modify plugin JARs or enable plugins"
+  ]
+}
